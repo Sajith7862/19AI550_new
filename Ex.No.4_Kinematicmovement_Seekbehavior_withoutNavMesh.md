@@ -1,6 +1,6 @@
 # Ex.No: 4  Implementation of Kinematic movement -seek and Flee behavior in Unity
 ### DATE:                                                                            
-### REGISTER NUMBER : 
+### REGISTER NUMBER : 212223240090
 ### AIM: 
 To write a program to simulate the process of seek and Flee behavior in Unity without NavigationMeshAgent. 
 ### Algorithm:
@@ -25,63 +25,45 @@ To write a program to simulate the process of seek and Flee behavior in Unity wi
     
 ### Program:
 ```
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class seekScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Transform target;  // The object to seek
-    public float speed = 5f;  // Movement speed
-    void Start()
-    {
-        
-    }
+    public Transform target;
+    public float speed = 5f;
 
-    // Update is called once per frame
     void Update()
     {
-        if (target == null) return;  // Exit if no target is assigned
+        if (target == null) return;
 
-        // Calculate the desired direction
         Vector3 direction = (target.position - transform.position).normalized;
-
-        // Move the object towards the target
         transform.position += direction * speed * Time.deltaTime;
     }
 }
+
 ```
 ```
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class fleeScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Transform target;  // The object to seek
-    public float speed = 5f;  // Movement speed
-    void Start()
-    {
-        
-    }
+    public Transform target;
+    public float speed = 5f;
 
-    // Update is called once per frame
     void Update()
     {
-        if (target == null) return;  // Exit if no target is assigned
+        if (target == null) return;
 
-        // Calculate the desired direction
-        Vector3 direction = (transform.position-target.position).normalized;
-
-        // Move the object towards the target
+        Vector3 direction = (transform.position - target.position).normalized;
         transform.position += direction * speed * Time.deltaTime;
     }
 }
+
+
 ```
 ### Output:
 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f9e12715-f3c9-4bbc-9b63-a5c8ab59b495" />
 
 
 
