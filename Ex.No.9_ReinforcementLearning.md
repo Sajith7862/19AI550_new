@@ -1,6 +1,6 @@
 # Ex.No: 9  Implementation of Simple Reinforcement Learning 
 ### DATE:                                                                            
-### REGISTER NUMBER : 
+### REGISTER NUMBER : 212223240090
 ### AIM: 
 To write a program to implement  Reinforcement learning  in Unity 
 ### Algorithm:
@@ -21,7 +21,7 @@ Action Space: Continuous (2)
 mlagents-learn config.yaml --run-id=move-to-target --train
 ```  
 ### Program:
-```
+```python
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
@@ -106,9 +106,11 @@ behaviors:
         strength: 1.0
 ```
 ### Output:
+<img width="908" height="923" alt="image" src="https://github.com/user-attachments/assets/98d5ee1c-3aee-42bd-8e8f-69d3e4e4a8b1" />
 
 
 
+<img width="908" height="923" alt="image" src="https://github.com/user-attachments/assets/11e6802d-a312-4dc4-941e-d90dca300810" />
 
 
 
